@@ -1,2 +1,2 @@
-# pg2gql
-Postgres to GraphQL Schema generation
+# mysql2gql
+MySQL to GraphQL Schema generation
