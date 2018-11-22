@@ -1,18 +1,19 @@
 {
-  "name": "pg2gql",
+  "name": "mysql2gql",
   "version": "1.0.0",
-  "description": "Transform database objects in Postgres schema to GraphQL types",
+  "description": "Transform database objects in MySQL schema to GraphQL types",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kmati/pg2gql.git"
+    "url": "git+https://github.com/kmati/mysql2gql.git"
   },
   "keywords": [
-    "postgres",
-    "pg",
+    "mysql",
+    "sql",
     "graphql",
     "gql",
     "transform"
@@ -20,7 +21,7 @@
   "author": "Kimanzi Mati",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kmati/pg2gql/issues"
+    "url": "https://github.com/kmati/mysql2gql/issues"
   },
-  "homepage": "https://github.com/kmati/pg2gql#readme"
+  "homepage": "https://github.com/kmati/mysql2gql#readme"
 }
