@@ -1,0 +1,26 @@
+{
+  "name": "pg2gql",
+  "version": "1.0.0",
+  "description": "Transform database objects in Postgres schema to GraphQL types",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmati/pg2gql.git"
+  },
+  "keywords": [
+    "postgres",
+    "pg",
+    "graphql",
+    "gql",
+    "transform"
+  ],
+  "author": "Kimanzi Mati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmati/pg2gql/issues"
+  },
+  "homepage": "https://github.com/kmati/pg2gql#readme"
+}
