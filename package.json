@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/kmati/mysql2gql/issues"
   },
-  "homepage": "https://github.com/kmati/mysql2gql#readme"
+  "homepage": "https://github.com/kmati/mysql2gql#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
 }

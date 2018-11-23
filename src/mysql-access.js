@@ -88,20 +88,20 @@ class MySqlAccess {
     emitGraphQLType(tableName, table) {
         const { columns } = table;
 
-        const columns = table.columns.map(column => {
+        const renderedColumns = table.columns.map(column => {
             return `${column.columnName}: ${this.normalizeType(column.type)}`;
         });
 
         return `type ${tableName} {
-            ${columns.join(', ')}
-        }`;
+  ${renderedColumns.join(',\n  ')}
+}`;
     }
 
     generateGraphQLSchema() {
-        this.connect()
+        return this.connect()
             .then(() => this.getTablesAndColumns())
             .then(() => {
-                const graphQlTypes = '';
+                let graphQlTypes = '';
                 for (const tableName in this.tables) {
                     graphQlTypes += this.emitGraphQLType(tableName, this.tables[tableName]) + '\n';
                 }
@@ -109,3 +109,5 @@ class MySqlAccess {
             });
     }
 }
+
+module.exports = MySqlAccess;
